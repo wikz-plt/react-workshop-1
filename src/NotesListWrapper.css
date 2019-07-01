@@ -1,0 +1,10 @@
+.notes-list-wrapper {
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid #a87b9f;
+    z-index: 2;
+    position: fixed;
+    box-shadow: 0 0 9px 0px #49123857
+}

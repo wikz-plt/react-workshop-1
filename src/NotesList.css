@@ -1,0 +1,22 @@
+ul.notes-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.notes-list li {
+    width: 100%;
+    padding: 20px 10px;
+    border-bottom: 1px solid #a87b9f;
+    cursor: pointer;
+}
+
+ul.notes-list li.active {
+    background: rgba(0,0,0,0.1);
+}
+
+ul.notes-list li h4 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 1.2em;
+}

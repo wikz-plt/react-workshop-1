@@ -1,0 +1,17 @@
+.note-display-wrapper {
+    position: relative;
+    padding-left: 350px;
+    width: 100%;
+}
+
+.note-display {
+    background: #eee;
+    min-height: 100vh;
+    padding: 10px 20px;
+    margin: 0;
+    position: relative;
+}
+
+.note-display-nav {
+    float: right;
+}

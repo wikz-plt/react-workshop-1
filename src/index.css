@@ -1,8 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
 }
 
+body {
+    background: #ffcef5;
+    color: #585e59;
+}
+
+.btn {
+    padding: 13px 20px;
+    background: #8cc999;
+    border: 1px solid #61a46f;
+    border-radius: 3px;
+    font-family: inherit;
+    margin-bottom: 13px;
+    font-size: .8em;
+    outline: none;
+}
+
+.btn.btn-2 {
+    background: #bbb;
+    border: 1px solid #999;
+}
+
+.btn.btn-small {
+    padding: 7px 15px;
+}
 
 
