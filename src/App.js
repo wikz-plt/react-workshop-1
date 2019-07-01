@@ -66,6 +66,29 @@ class App extends React.Component {
         });
     }
 
+    handleSaveNote(note) {
+        const notes = this.state.notes;
+        const originalNoteIndex = notes.findIndex(item => item.id === note.id);
+
+        if (originalNoteIndex === -1) {
+            return;
+        }
+
+        const now = new Date();
+        const timestamp = now.getTime();
+        note.edited_at = timestamp;
+
+        notes.splice(originalNoteIndex, 1);
+        this.setState({
+            notes: [
+                note,
+                ...notes
+            ],
+        });
+
+        this.saveNote(note);
+    }
+
     getNote(id) {
         return this.state.notes.find(note => note.id === id);
     }
@@ -81,7 +104,7 @@ class App extends React.Component {
                 />
                 <NoteDisplay
                     note={this.state.activeNote ? this.getNote(this.state.activeNote) : null}
-                    onNoteSave={() => {}}
+                    onSaveNote={this.handleSaveNote.bind(this)}
                 />
             </div>
         );

@@ -2,6 +2,7 @@ import React from 'react';
 import './NoteDisplay.css';
 import NoteDisplayEmpty from './NoteDisplayEmpty';
 import NotePreview from './NotePreview';
+import NoteEdit from './NoteEdit';
 
 const MODES = {
     PREVIEW: 'preview',
@@ -21,8 +22,8 @@ class NoteDisplay extends React.Component {
         this.toggleMode(MODES.EDIT);
     }
 
-    saveNote() {
-        // todo: update state
+    saveNote(note) {
+        this.props.onSaveNote(note);
 
         this.toggleMode(MODES.PREVIEW);
     }
@@ -41,7 +42,10 @@ class NoteDisplay extends React.Component {
                                         onEditClick={this.editNote.bind(this)}
                                     />
                                 ) : (
-                                    <div>EDITING</div>
+                                    <NoteEdit
+                                        note={this.props.note}
+                                        onSaveClick={this.saveNote.bind(this)}
+                                    />
                                 )}
                             </div>
                         )

@@ -1,0 +1,33 @@
+.note-edit {
+
+}
+
+.note-title-input-wrapper {
+    width: 100%;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 3px 0;
+}
+
+.note-title-input {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.note-edit textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 80vh;
+    outline: none;
+    background: #eee;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 8px;
+}
