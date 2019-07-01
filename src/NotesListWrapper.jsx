@@ -8,6 +8,7 @@ class NotesListWrapper extends React.Component {
     render() {
         return (
             <div className="notes-list-wrapper">
+                <button className="new-note-button" onClick={this.props.onNewNoteClick}>+</button>
                 {this.props.notes && this.props.notes.length ? (
                     <NotesList
                         notes={this.props.notes}
