@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Wik's React Workshop #1
+Master branch of this project is already a fully working example.
+Checkout branch `workshop` to begin from scratch, but having all styles in. 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
